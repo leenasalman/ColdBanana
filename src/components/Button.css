@@ -1,0 +1,24 @@
+:root {
+    --primary: linear-gradient(90deg, #73E0A9 0%, #5B68DF 100%);;
+}
+.btn {
+    padding: 9px 56px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn--primary{
+    background: var(--primary);
+    color: #fff;
+    border-radius: 100px;
+    border: none;
+}
+.btn--outline {
+    background-color: transparent;
+    color: #242424;
+    border: 1px solid var(--primary);
+    transform: all .3s ease-out;
+    border-radius: 100px;
+}
