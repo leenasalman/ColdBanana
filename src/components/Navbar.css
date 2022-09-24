@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 999;
   }
@@ -23,7 +24,7 @@
   .nav-item a {
     color: #242222;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
   }
 @media screen and (min-width: 961px) {

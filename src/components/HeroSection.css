@@ -1,3 +1,65 @@
 .main-section-bg {
-    background: url(../../public/hero-bg.png);
+  background: url(../../public/images/hero-bg.png);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.main-section-bg::before {
+  content: "";
+  position: absolute;
+  width: 497px;
+  height: 309px;
+  left: 0px;
+  top: -3rem;
+  background: url(../../public/images/background-bubble-4.png);
+  background-repeat: no-repeat;
+}
+.main-section-bg::after {
+  content: "";
+  position: absolute;
+  width: 344px;
+  height: 535px;
+  right: 0rem;
+  bottom: 0rem;
+  top: 6rem;
+  background: url(../../public/images/background-bubble-5.png);
+  background-repeat: no-repeat;
+}
+.main-header-title-container {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  right: 25%;
+  z-index: 9;
+}
+.main-header-title-container h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #212121;
+}
+@media screen and (max-width: 960px) {
+  .main-header-title-container h1 {
+    font-size: 32px;
+  }
+  .main-header-title-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-section-bg::after {
+    width: 184px;
+    height: 535px;
+    right: 0rem;
+    bottom: 0rem;
+    top: 11rem;
+  }
+  .main-section-bg::before {
+    width: 389px;
+    height: 309px;
+    top: -6rem;
+}
+}
+@media screen and (min-width: 961px) {
 }
