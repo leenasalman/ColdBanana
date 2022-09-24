@@ -36,8 +36,8 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <GoogleMapSection mapMarkers={data} />
-      <LocationsSection mapData={data} />
+      {data ?  <GoogleMapSection mapMarkers={data} /> : error}
+      {data? <LocationsSection mapData={data} /> : error}
     </>
   );
 }
