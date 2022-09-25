@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   GoogleMap,
   InfoWindow,
   LoadScript,
   Marker,
 } from "@react-google-maps/api";
-import './GoogleMapSection.css'
+import "./GoogleMapSection.css";
 
 function GoogleMapSection(props) {
   const [activeInfoWindow, setActiveInfoWindow] = useState("");
@@ -32,28 +32,24 @@ function GoogleMapSection(props) {
         >
           <GoogleMap
             mapContainerStyle={containerStyle}
-            zoom={15}
+            zoom={6}
             center={center}
           >
             {props.mapMarkers &&
               props.mapMarkers.map((location, index) => (
                 <Marker
-                  key={location.id + "_" + index}
-                  position={{
-                    lat: location.lat,
-                    lng: location.lng,
-                  }}
-                  label={location.location_name}
-                  draggable={false}
+                  key={location.id+"_"+index}
+                  position={{ lat: location.lat, lng: location.lng }}
                   onClick={(event) => markerClicked(location, location.id)}
                 >
                   {activeInfoWindow === location.id && (
                     <InfoWindow
-                      position={{ lat: location.lat, lng: location.lng }}
+                      position={{
+                        lat: location.lat,
+                        lng: location.lng,
+                      }}
                     >
-                      <b>
-                        {location.location_name}, {location.lat}, {location.lng}
-                      </b>
+                    <b>{location.location_name}, {location.address_line}</b>
                     </InfoWindow>
                   )}
                 </Marker>
