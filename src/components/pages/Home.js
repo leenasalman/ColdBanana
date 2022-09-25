@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import HeroSection from "../HeroSection";
 import LocationsSection from "../LocationsSection";
 import GoogleMapSection from "../GoogleMapSection";
+import FooterSection from "../FooterSection";
+import ImageWTextSection from "../ImageWTextSection";
 
 function Home() {
   const [data, setData] = useState(null);
@@ -36,8 +38,10 @@ function Home() {
   return (
     <>
       <HeroSection />
-      {data ?  <GoogleMapSection mapMarkers={data} /> : error}
-      {data? <LocationsSection mapData={data} /> : error}
+      <ImageWTextSection />
+      {data ? <GoogleMapSection mapMarkers={data} /> : error}
+      {data ? <LocationsSection mapData={data} /> : error}
+      <FooterSection />
     </>
   );
 }

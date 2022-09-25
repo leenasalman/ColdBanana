@@ -1,6 +1,6 @@
 .main-section-bg {
-  background: url(../../public/images/hero-bg.png);
-  height: 100vh;
+  background: url(../images/hero-bg.png);
+  height: 117vh;
   background-size: cover;
   position: relative;
 }
@@ -11,7 +11,7 @@
   height: 309px;
   left: 0px;
   top: -3rem;
-  background: url(../../public/images/background-bubble-4.png);
+  background: url(../images/background-bubble-4.png);
   background-repeat: no-repeat;
 }
 .main-section-bg::after {
@@ -22,7 +22,7 @@
   right: 0rem;
   bottom: 0rem;
   top: 6rem;
-  background: url(../../public/images/background-bubble-5.png);
+  background: url(../images/background-bubble-5.png);
   background-repeat: no-repeat;
 }
 .main-header-title-container {
@@ -59,7 +59,5 @@
     width: 389px;
     height: 309px;
     top: -6rem;
-}
-}
-@media screen and (min-width: 961px) {
+  }
 }

@@ -1,0 +1,74 @@
+.footer-section {
+  padding-top: 13rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.footer-section::after {
+  content: "";
+  background-image: url(../images/footer-bubble.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 585px;
+  height: 472px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+a.social-media-link {
+  padding: 10px;
+  background: linear-gradient(90deg, #73e0a9 0%, #5b68df 100%);
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 45px;
+  height: 45px;
+}
+h4.footer-main-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+p.footer-main-paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #ffffff;
+  margin: 0;
+  padding-right: 2rem;
+}
+li.footer-list-item {
+  list-style: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+  color: #212121;
+  margin-bottom: 12px;
+}
+ul.footer-list {
+  padding: 0;
+  margin: 0;
+}
+h5.footer-list-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  background: linear-gradient(90.71deg, #73e0a9 0%, #5b68df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 21px;
+}
+li.footer-list-item a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+  color: #212121;
+}

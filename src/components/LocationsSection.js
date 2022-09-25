@@ -1,19 +1,15 @@
-import React from 'react';
-import Card from './Cards';
-import './LocationSection.css'
+import React from "react";
+import Card from "./Cards";
+import "./LocationSection.css";
 
 function LocationsSection(props) {
   return (
     <section className="card-section">
       <div className="container">
-        <div className="row">
-          <div className="col">
-            <Card mapData={props.mapData}/>
-          </div>
-        </div>
+        <Card mapData={props.mapData} />
       </div>
     </section>
-  )
+  );
 }
 
-export default LocationsSection
+export default LocationsSection;
