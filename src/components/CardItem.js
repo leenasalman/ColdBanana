@@ -18,7 +18,7 @@ function CardItem(props) {
             </li>
             <li>
               <Icon.Pin />
-              <p>{props.cardPin}</p>
+              <p className="para-style" title={props.cardPin}>{props.cardPin.substring(0,20)}...</p>
             </li>
             <li>
               <Link to={"/" + props.cardShare}>

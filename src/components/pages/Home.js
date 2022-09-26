@@ -37,6 +37,7 @@ function Home() {
         setLoading(false);
       });
   }, []);
+
   return (
     // load GoogleMapSection and LocationsSection if data exists
     <>
