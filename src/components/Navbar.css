@@ -21,6 +21,7 @@
 }
 .navbar-logo:hover {
   text-decoration: none;
+  color: aliceblue;
 }
 .nav-item a {
   color: #242222;

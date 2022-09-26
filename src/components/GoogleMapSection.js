@@ -34,7 +34,7 @@ function GoogleMapSection(props) {
         >
           <GoogleMap
             mapContainerStyle={containerStyle}
-            zoom={6}
+            zoom={13}
             center={center}
           >
             {/* set marker for all locations on google maps api */}

@@ -20,11 +20,12 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to="/login" className="">
+    <Link to="/login">
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
+        aria-labelledby ={children}
       >
         {children}
       </button>

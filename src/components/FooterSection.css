@@ -23,7 +23,7 @@ a.social-media-link {
   width: 45px;
   height: 45px;
 }
-h4.footer-main-title {
+h5.footer-main-title {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -54,7 +54,7 @@ ul.footer-list {
   padding: 0;
   margin: 0;
 }
-h5.footer-list-title {
+h6.footer-list-title {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -73,7 +73,7 @@ li.footer-list-item a {
   color: #212121;
 }
 @media screen and (max-width: 960px) {
-  .footer-section .col div, h4.footer-main-title, li.footer-list-item {
+  .footer-section .col div, h5.footer-main-title, li.footer-list-item {
     text-align: center;
   }
   p.footer-main-paragraph {
@@ -82,7 +82,7 @@ li.footer-list-item a {
   .footer-section::after {
     display: none;
   }
-  h4.footer-main-title {
+  h5.footer-main-title {
     background: linear-gradient(90.71deg, #73e0a9 0%, #5b68df 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

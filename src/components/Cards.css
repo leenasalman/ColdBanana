@@ -1,4 +1,4 @@
-.cards h2 {
+.cards h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -71,7 +71,7 @@
     top: -20px;
     left: 0;
   }
-  .cards h2 {
+  .cards h3 {
     text-align: center;
   }
 }

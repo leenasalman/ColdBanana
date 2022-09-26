@@ -5,7 +5,7 @@ import "./Cards.css";
 function Cards(props) {
   return (
     <div className="cards">
-      <h2>Our Locations</h2>
+      <h3>Our Locations</h3>
       <div className="cards__container">
         <div className="cards__wrapper">
           <div className="cards__items row">

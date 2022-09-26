@@ -16,7 +16,7 @@ function FooterSection() {
           <div className="row flex-md-row flex-column">
             <div className="col-md-6 col">
               <div>
-                <h4 className="footer-main-title">Chilled grape</h4>
+                <h5 className="footer-main-title">Chilled grape</h5>
                 <p className="footer-main-paragraph">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                   ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
@@ -26,7 +26,7 @@ function FooterSection() {
             </div>
             <div className="col-md-2 col">
               <div>
-                <h5 className="footer-list-title">Company</h5>
+                <h6 className="footer-list-title">Company</h6>
                 <ul className="footer-list">
                   <li className="footer-list-item">
                     <Link to="/about" className="">
@@ -53,7 +53,7 @@ function FooterSection() {
             </div>
             <div className="col-md-2 col">
               <div>
-                <h5 className="footer-list-title">Products</h5>
+                <h6 className="footer-list-title">Products</h6>
                 <ul className="footer-list">
                   <li className="footer-list-item">
                     <Link to="/about" className="">
@@ -80,7 +80,7 @@ function FooterSection() {
             </div>
             <div className="col-md-2 col">
               <div>
-                <h5 className="footer-list-title">Follow us</h5>
+                <h6 className="footer-list-title">Follow us</h6>
                 <div className="social-media-follow-us">
                   <div className="row">
                     <div className="col">

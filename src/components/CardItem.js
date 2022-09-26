@@ -8,9 +8,9 @@ function CardItem(props) {
   return (
     <>
       <div className="card col-md" key={props.keyID}>
-        <img src={props.cardImg} alt="Card cap" />
+        <img src={props.cardImg} alt="image of location card" />
         <div className="card-body">
-          <h5 className="card-title">{props.cardTitle}</h5>
+          <h4 className="card-title">{props.cardTitle}</h4>
           <ul>
             <li>
               <Icon.Shop />
