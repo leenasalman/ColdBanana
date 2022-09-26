@@ -29,3 +29,13 @@ And to run this project in your local environment, checkout [Create React App](h
 - Accessible
 - Cross platform
 
+
+## Screenshots
+**Hero Section**
+![Hero Section](https://raw.githubusercontent.com/leenasalman/ColdBanana/main/src/images/Screenshot%202022-09-26%20194528.png)
+
+**Google Maps**
+![Hero Section](https://raw.githubusercontent.com/leenasalman/ColdBanana/main/src/images/Screenshot%202022-09-26%20194605.png)
+
+**Location Items**
+![Hero Section](https://raw.githubusercontent.com/leenasalman/ColdBanana/main/src/images/Screenshot%202022-09-26%20194626.png)
