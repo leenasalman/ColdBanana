@@ -38,7 +38,7 @@ p.footer-main-paragraph {
   line-height: 33px;
   color: #ffffff;
   margin: 0;
-  padding-right: 2rem;
+  padding-right: 5rem;
 }
 li.footer-list-item {
   list-style: none;
@@ -46,7 +46,7 @@ li.footer-list-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  text-align: justify;
+  text-align: left;
   color: #212121;
   margin-bottom: 12px;
 }
@@ -71,4 +71,23 @@ li.footer-list-item a {
   line-height: 27px;
   text-align: justify;
   color: #212121;
+}
+@media screen and (max-width: 960px) {
+  .footer-section .col div, h4.footer-main-title, li.footer-list-item {
+    text-align: center;
+  }
+  p.footer-main-paragraph {
+    padding: 0;
+  }
+  .footer-section::after {
+    display: none;
+  }
+  h4.footer-main-title {
+    background: linear-gradient(90.71deg, #73e0a9 0%, #5b68df 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p.footer-main-paragraph {
+    color: #212121;
+  }
 }

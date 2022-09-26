@@ -10,6 +10,7 @@ import "./GoogleMapSection.css";
 function GoogleMapSection(props) {
   const [activeInfoWindow, setActiveInfoWindow] = useState("");
 
+  // map css style
   const containerStyle = {
     width: "100%",
     height: "713px",
@@ -20,9 +21,10 @@ function GoogleMapSection(props) {
     lat: 50.720202,
     lng: -1.879404,
   };
+
+  //save index of the clicked marker on the map
   const markerClicked = (marker, index) => {
     setActiveInfoWindow(index);
-    console.log(marker, index);
   };
   return (
     <section className="location-section">
@@ -35,6 +37,7 @@ function GoogleMapSection(props) {
             zoom={6}
             center={center}
           >
+            {/* set marker for all locations on google maps api */}
             {props.mapMarkers &&
               props.mapMarkers.map((location, index) => (
                 <Marker

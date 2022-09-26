@@ -13,8 +13,8 @@ function FooterSection() {
     <>
       <footer className="footer-section">
         <div className="container">
-          <div className="row">
-            <div className="col-4">
+          <div className="row flex-md-row flex-column">
+            <div className="col-md-6 col">
               <div>
                 <h4 className="footer-main-title">Chilled grape</h4>
                 <p className="footer-main-paragraph">
@@ -24,7 +24,7 @@ function FooterSection() {
                 </p>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-md-2 col">
               <div>
                 <h5 className="footer-list-title">Company</h5>
                 <ul className="footer-list">
@@ -51,7 +51,7 @@ function FooterSection() {
                 </ul>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-md-2 col">
               <div>
                 <h5 className="footer-list-title">Products</h5>
                 <ul className="footer-list">
@@ -78,7 +78,7 @@ function FooterSection() {
                 </ul>
               </div>
             </div>
-            <div className="col-2">
+            <div className="col-md-2 col">
               <div>
                 <h5 className="footer-list-title">Follow us</h5>
                 <div className="social-media-follow-us">

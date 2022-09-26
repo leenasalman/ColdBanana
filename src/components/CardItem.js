@@ -7,7 +7,7 @@ import "./CardItem.css";
 function CardItem(props) {
   return (
     <>
-      <div className="card" key={props.keyID}>
+      <div className="card col-md" key={props.keyID}>
         <img src={props.cardImg} alt="Card cap" />
         <div className="card-body">
           <h5 className="card-title">{props.cardTitle}</h5>
@@ -29,6 +29,8 @@ function CardItem(props) {
           </ul>
         </div>
       </div>
+      {/* add divider after every Even div.card element */}
+      {props.keyID % 2 === 0 ? <div className="w-100"></div> : ""}
     </>
   );
 }

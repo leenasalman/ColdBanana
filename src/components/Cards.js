@@ -1,6 +1,6 @@
 import React from "react";
 import CardItem from "./CardItem";
-import './Cards.css'
+import "./Cards.css";
 
 function Cards(props) {
   return (
@@ -8,7 +8,8 @@ function Cards(props) {
       <h2>Our Locations</h2>
       <div className="cards__container">
         <div className="cards__wrapper">
-          <div className="cards__items">
+          <div className="cards__items row">
+            {/* map location list cards */}
             {props.mapData &&
               props.mapData.map(
                 ({

@@ -6,11 +6,13 @@ import GoogleMapSection from "../GoogleMapSection";
 import FooterSection from "../FooterSection";
 import ImageWTextSection from "../ImageWTextSection";
 
+//home page
 function Home() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  //fetch data from the api
   useEffect(() => {
     fetch(
       "https://my-json-server.typicode.com/TomSearle/cb-devtest-api/locations"
@@ -36,6 +38,7 @@ function Home() {
       });
   }, []);
   return (
+    // load GoogleMapSection and LocationsSection if data exists
     <>
       <HeroSection />
       <ImageWTextSection />

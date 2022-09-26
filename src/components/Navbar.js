@@ -10,6 +10,19 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  window.addEventListener('scroll', function(event){
+    var navbar = document.getElementsByClassName('navbar')[0];
+    var top = event.target.scrollTop;
+    if(top >=246) {
+      // if window Y position is >= 246, add class fixed if it already doesn't exist
+      return !navbar.classList.contains('fixed') ? navbar.classList.add('fixed') : "";
+    } else {
+      //  if window Y position is <= 246, remove class fixed if it already exist
+      return navbar.classList.contains('fixed') ? navbar.classList.remove('fixed') : "";
+    }
+  }, true)
+
+  //show button on mobile side and don't show on desktop
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
