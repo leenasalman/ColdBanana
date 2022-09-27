@@ -1,8 +1,7 @@
 
+# Chilled Grape
 
-# ColdBanana
-
-This project is a technical assessment from Envited for their Frontend Developer position. The project is a web page of a location listing template on [Figma](https://www.figma.com/). It requires data to be fetched from an [API endpoint](https://my-json-server.typicode.com/TomSearle/cb-devtest-api/locations) and display the data.
+This project is a technical assessment from Cold Banana for their Frontend Developer position. The project is a web page of a location listing template on [Figma](https://www.figma.com/). It requires data to be fetched from an [API endpoint](https://my-json-server.typicode.com/TomSearle/cb-devtest-api/locations) and display the data.
 
 
 ## Tech Stack
